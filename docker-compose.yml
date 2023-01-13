@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  frontend:
+    build: .
+    container_name: base_vuejs
+    command: npm run serve
+    restart: always
+    ports:
+      - "80:8080"
